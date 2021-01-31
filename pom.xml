@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>org.example</groupId>
+<artifactId>rest-assured-tests</artifactId>
+<version>1.0-SNAPSHOT</version>
+<properties>
+  <serenity.version>1.5.8</serenity.version>
+  <serenity.maven.version>1.5.8</serenity.maven.version>
+  <slf4j.version>1.6.1</slf4j.version>
+ <maven.failsafe.plugin.version>3.1.0</maven.failsafe.plugin.version>
+ <maven.compiler.source>1.6</maven.compiler.source>
+   <maven.compiler.target>1.6</maven.compiler.target>
+ <java.version>1.8</java.version>
+</properties>
+<dependencies>
+ <dependency>
+   <groupId>net.serenity-bdd</groupId>
+   <artifactId>serenity-core</artifactId>
+   <version>${serenity.version}</version>
+ </dependency>
+ <dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M5</version>
+</dependency>
+   <dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.13</version>
+</dependency>
+ 
+ <dependency>
+  <groupId>net.serenity-bdd</groupId>
+  <artifactId>serenity-junit</artifactId>
+  <version>${serenity.version}</version>
+ </dependency>
+ <dependency>
+  <groupId>net.serenity-bdd</groupId>
+  <artifactId>serenity-rest-assured</artifactId>
+  <version>${serenity.version}</version>
+ </dependency>
+ <dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-simple</artifactId>
+  <version>${slf4j.version}</version>
+ </dependency>
+<!-- API, java.xml.bind module -->
+ <dependency>
+  <groupId>jakarta.xml.bind</groupId>
+  <artifactId>jakarta.xml.bind-api</artifactId>
+  <version>2.3.2</version>
+ </dependency>
+<!-- Runtime, com.sun.xml.bind module -->
+ <dependency>
+  <groupId>org.glassfish.jaxb</groupId>
+  <artifactId>jaxb-runtime</artifactId>
+  <version>2.3.2</version>
+ </dependency>
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter-api</artifactId>
+  <version>5.7.0</version>
+  <scope>test</scope>
+ </dependency>
+<dependency>
+  <groupId>net.serenity-bdd</groupId>
+  <artifactId>serenity-core</artifactId>
+  <version>${serenity.version}</version>
+ </dependency>
+ <dependency>
+    <groupId>com.googlecode.jsontoken</groupId>
+    <artifactId>jsontoken</artifactId>
+    <version>1.0</version>
+</dependency>
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>18.0</version>
+</dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+      <version>1.1.1</version>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
+ 
+<dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+      <version>0.9.0</version>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
+</dependencies>
+
+</project>

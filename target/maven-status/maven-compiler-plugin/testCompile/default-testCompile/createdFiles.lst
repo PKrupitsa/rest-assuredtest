@@ -1,0 +1,6 @@
+test\constanTest.class
+test\appServiceTest.class
+test\authTests.class
+test\guideDataTests.class
+test\documentTest.class
+test\Token.class
