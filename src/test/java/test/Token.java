@@ -21,7 +21,7 @@ public class Token {
     
     private static final String AUTH_URL = "http://localhost:8080/authentication-web/api/auth";
   
-    @BeforeClass
+    
     public static String getToken() throws ParseException{
         
         
@@ -43,4 +43,5 @@ public class Token {
         return token;
     }
     
+   
 }

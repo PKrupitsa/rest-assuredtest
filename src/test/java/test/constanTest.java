@@ -5,11 +5,15 @@
  */
 package test;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
+import static io.restassured.RestAssured.given;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
+import static org.hamcrest.CoreMatchers.containsString;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.junit.Before;
@@ -19,40 +23,24 @@ import org.junit.Test;
  *
  * @author p.krupitsa
  */
-public class constanTest {
+public class ConstanTest {
     
     Token TOKEN = new Token();
-    public String mnemo = "sklad";
+ /*   public String mnemo = "sklad";
     public String value = "SKLAD";
     public String mnemo_period = "sklad_period";
     public String date = "02.01.2021T13:14:45";
-    public String value_period = "SKLAD_period";
+    public String value_period = "SKLAD_period"; */
     
-    @Before
-    @Test
-    public void createConstantTest() throws ParseException{
-        
-        JSONObject requestBody = new JSONObject();
-        requestBody.put("mnemo", mnemo);
-        requestBody.put("value", value);
-        
-        RequestSpecification request = RestAssured.given();
-        request.header("accept", "application/json");
-        request.header("Content-Type", "application/json");
-        request.header("authorization", "Bearer " + TOKEN.getToken());
-        request.body(requestBody.toString());
-        
-        
-        Response response = request.post("http://localhost:8080/rest/constant");
-        
-        int statusCode = response.getStatusCode();
-        assertEquals(200, statusCode);
-        System.out.println("The status code recieved: " + statusCode);
-        String responseBody = response.getBody().asString();
-        System.out.println(responseBody);
-        assertNotNull(responseBody);
-    }
-    @Before
+   
+    
+    
+    
+    
+    
+    ConstantData constant2 = new ConstantData("sklad","SKLAD", "");
+    
+ /*   @Before
     @Test
     public void createPeriodConstantTest() throws ParseException{
         
@@ -69,6 +57,7 @@ public class constanTest {
         
         
         Response response = request.post("http://localhost:8080/rest/constant");
+       
         
         int statusCode = response.getStatusCode();
         assertEquals(200, statusCode);
@@ -142,7 +131,7 @@ public class constanTest {
         RequestSpecification request = RestAssured.given();
         request.header("accept", "application/json");
         request.header("Content-Type", "application/json");
-        request.header("authorization", "Bearer " + TOKEN.getToken());
+        request.header("authorization", "Bearer " + Token.getToken());
         request.body(requestBody.toString());
         
         
@@ -166,7 +155,7 @@ public class constanTest {
         System.out.println("The status code recieved: " + statusCode);
         
        
-    }
+    }*/
     
     
 }

@@ -9,6 +9,11 @@ package test;
  *
  * @author p.krupitsa
  */
-public class documentTest {
+public class DocumentTest {
     
+    public static final String AUTH_URL = "http://localhost:8080/authentication-web/api/auth";
+    Token TOKEN = new Token();
+    
+    
+   
 }

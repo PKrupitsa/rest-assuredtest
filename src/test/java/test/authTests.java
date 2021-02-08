@@ -28,7 +28,7 @@ import org.junit.Ignore;
  * @author p.krupitsa
  */
 
-public class authTests extends Assert {
+public class AuthTests extends Assert {
    
     
     public static final String AUTH_URL = "http://localhost:8080/authentication-web/api/auth";
@@ -77,6 +77,7 @@ public class authTests extends Assert {
         assertEquals(202, statusCode);
         System.out.println("Test The status code recieved: " + statusCode);
         System.out.println("TOKEN" + TOKEN);
+       
         String responseBody = response.getBody().asString();
         System.out.println(responseBody);
             
@@ -93,7 +94,7 @@ public class authTests extends Assert {
         
         assertEquals(200, statusCode);
         System.out.println("The status code recieved: " + statusCode);
-        String responseBody = response.getBody().asString();
+        Object responseBody = response.getBody();
      //   writeUsingFileWriter(responseBody);
         
         

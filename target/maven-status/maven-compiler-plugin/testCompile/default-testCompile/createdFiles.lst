@@ -1,6 +1,8 @@
-test\constanTest.class
-test\appServiceTest.class
-test\authTests.class
-test\guideDataTests.class
-test\documentTest.class
+test\ConstantData.class
+test\DocumentTest.class
+test\AppServiceTest.class
+test\AuthTests.class
+test\ConstanTest.class
+test\GuideDataTests.class
 test\Token.class
+test\PostInstance.class

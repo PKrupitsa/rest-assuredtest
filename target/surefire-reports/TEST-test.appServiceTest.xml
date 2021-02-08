@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="test.appServiceTest" time="8.399" errors="0" skipped="1">
+<testsuite tests="3" failures="0" name="test.AppServiceTest" time="8.5" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-jvmci-20.2-b03"/>
     <property name="sun.boot.library.path" value="C:\Program Files\graalvm-ce-java11-20.2.0\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\p.krupitsa\Documents\NetBeansProjects\winiumTest"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\p.krupitsa\Documents\NetBeansProjects\restTest"/>
     <property name="java.vm.vendor" value="GraalVM Community"/>
     <property name="java.vendor.url" value="https://www.graalvm.org/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,9 +14,9 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="test" value="test.appServiceTest"/>
+    <property name="test" value="test.AppServiceTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\p.krupitsa\Documents\NetBeansProjects\winiumTest"/>
+    <property name="user.dir" value="C:\Users\p.krupitsa\Documents\NetBeansProjects\restTest"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.8+10-jvmci-20.2-b03"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -48,7 +48,7 @@
     <property name="java.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=test.appServiceTest -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar test-compile surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=test.AppServiceTest -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar test-compile surefire:test"/>
     <property name="java.home" value="C:\Program Files\graalvm-ce-java11-20.2.0"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -66,9 +66,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.appServiceTest" name="listAppGetTest" time="3.573"/>
-  <testcase classname="test.appServiceTest" name="appDependenceTest" time="3.574">
+  <testcase classname="test.AppServiceTest" name="getListAppTest" time="3.505"/>
+  <testcase classname="test.AppServiceTest" name="getAppVersionTest" time="3.507">
     <skipped/>
   </testcase>
-  <testcase classname="test.appServiceTest" name="getAppWithDependenceTest" time="1.252"/>
+  <testcase classname="test.AppServiceTest" name="getAppWithDependenceTest" time="1.488"/>
 </testsuite>

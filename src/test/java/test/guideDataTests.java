@@ -9,6 +9,6 @@ package test;
  *
  * @author p.krupitsa
  */
-public class guideDataTests {
+public class GuideDataTests {
     
 }
